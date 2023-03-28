@@ -1,0 +1,1 @@
+#a = [input("경기장"), input("이긴팀"), input("진팀"), input("수훈선수"), input("스코어")]#print(f'{a[0]}에서 {a[1]}이 {a[2]}에 {a[4]}로 승리했습니다. MVP : {a[3]}')import sysprint(sys.stdout.encoding)
