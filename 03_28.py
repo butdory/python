@@ -11,16 +11,14 @@
 num = input("num : ")
 i = 1
 res = ""
-if(len(num) <= 3):
-    print(num)
-else: #1234
-    while True:
-        if(i >= len(num)):
-            break
-        if(int(len(num[i : len(num)])) % 3 == 0):
-            res = num[0 : i] + "," + num[i : len(num)]
-            num = res
-            i += 1
+while True:
+    if(i >= len(num)):
+        res = num
+        break
+    if(int(len(num[i : len(num)])) % 3 == 0):
+        res = num[0 : i] + "," + num[i : len(num)]
+        num = res
         i += 1
-    print(res)
+    i += 1
+print(res)
 # 1, 2, 3 남은 숫자의 자리수가 3의 배수일 때 , 추가 

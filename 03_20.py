@@ -25,10 +25,9 @@ t.done()
 """
 
 
-a = 10
-b = 20
-c = 30
-d = 40
-a, b, c, d = 20, a, a, a
 
-print(a, b, c, d)
+int_input = int(input("정수를 입력하세요. : "))
+if(int_input % 3 == 0):
+    print("python", end=" ")
+if(int_input % 5 == 0):
+    print("Express")
